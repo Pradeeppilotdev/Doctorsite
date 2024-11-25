@@ -1,0 +1,142 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero section */
+.docimg {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #34495e;
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
+/* Articles and sections */
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+article img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+/* Text content */
+p {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Horizontal lines */
+hr#new1 {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3498db, transparent);
+    margin: 3rem 0;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+}
+
+footer h6 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer input[type="email"] {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem 0;
+}
+
+.Send {
+    background: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    article {
+        grid-template-columns: 1fr;
+    }
+} 
